@@ -4,7 +4,8 @@
 
 --1. Write a query to return users who have admin (or owner) roles
 SELECT UserName FROM Users
-WHERE RoleId = 1;
+JOIN Roles ON (Users.RoleId = Roles.Id)
+WHERE RoleName LIKE '%Admin%';
 
 --2. Write a query to return users who have admin roles and information about their taverns
 SELECT UserName, TavernName FROM Users
