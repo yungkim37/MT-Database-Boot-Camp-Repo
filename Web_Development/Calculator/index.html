@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head id="head">
+        <link rel="stylesheet" href="./style.css"/>
+        <title>
+            Calculator
+        </title>
+    </head>
+
+    <body>
+        <div id="label-container">
+            <label id="first-label" for="first-num" class="label">First Number</label> 
+            <label id="second-label" for="second-num" class="label">Second Number</label>
+        </div>
+        <div id="input-container">
+            <input id="first-num" class="input" type="text" autofocus="on" required></input>
+            <input id="second-num" class="input" type="text" required></input>
+        </div>
+        <div id="radio-container">
+            <input type="radio" name="operators" id="add" required><span>Add</span></input>
+            <input type="radio" name="operators" id="subtract" required><span>Subtract</span></input>
+            <input type="radio" name="operators" id="multiply" required><span>Multiply</span></input>
+            <input type="radio" name="operators" id="divide" required><span>Divide</span></input>
+        </div>
+        <div id="button-container">
+            <button id="equal-button" onclick="calculate()">=</button>
+            <button id="clear-button" onclick="clearValues()">Clear</button>
+        </div>
+        <h2 id="output">Enter two integers into the input boxes</h2>
+        <script src="./calculator.js"></script>
+
+</html>
